@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
         <nav>
             <ul class="flexContainerRow">
                 <li class="flexItemPrincipal">
-                    <a>wwwapas</a>
+                    <img src="/src/assets/logo.png" alt="wwwapas" width="150px">
                 </li>       
                 <li class="flexItem">
                     <a href="/public/index.html">Inicio</a>
@@ -29,17 +29,24 @@
             <hr>
         </nav>
 
+        <div class="flexContainerRow">
+            <div class="flexItemPrincipal">
+                <h1>Somos <strong>wwwapas</strong></h1>
+                <h2>Social media managers | Creadoras de contenido</h2>
+                <p>
+                    Nos encargamos de construir, gestionar y administrar la comunidad
+                    online de tu marca, empresa o negocio
+                    <strong>
+                        ¡Creamos relaciones estables y
+                        duraderas con tus clientes!
+                    </strong>
+                </p>
+            </div>
 
-        <h1>Somos <strong>wwwapas</strong></h1>
-        <h2>Social media managers | Creadoras de contenido</h2>
-        <p>
-            Nos encargamos de construir, gestionar y administrar la comunidad
-            online de tu marca, empresa o negocio
-            <strong>
-                ¡Creamos relaciones estables y
-                duraderas con tus clientes!
-            </strong>
-        </p>
+            <div class="flexItem">
+                <img src="/src/assets/foto.png" alt="portada" width="600px" height="auto">
+            </div>                
+        </div>
         <hr>
     </header>
     <main>
@@ -76,32 +83,39 @@
 
         <hr>
 
-        <section>
-            <h2>SERVICIOS</h2>
-            <article>
-                <ol>
-                    <li>Analisis de perfil (Benchmarking)</li>
-                    <li>Revision y activacion de canales</li>
-                    <li>Gestion, creacion y diseño de contenido</li>
-                    <li>Respuestas a mensajes y consultas</li>
-                    <li>Segmentacion de promociones segun el publico objetivo 
-                        de la pauta publicitaria
-                    </li>
-                    <li>Diagramamos un calendario que se ajuste a los objetivos de la empresa</li>
-                    <li>¡Empezamos a comunicar!</li>
-                </ol>
-            </article>
-
-            <div>
-                <p>
-                    <strong>
-                        ¿Queres que nos contactemos con vos?
-                    </strong>
-                    <br>
-                Envianos tu consulta
-                </p>                
+        <section class="flexContainerRow">
+            <div class="flexItemPrincipal">
+                <img src="/src/assets/img-servicios.png" alt="Logo servicios" width="400px">
+            </div>
+            <div class="flexItem">
+                <h2>SERVICIOS</h2>
+                <article>
+                    <ol>
+                        <li>Analisis de perfil (Benchmarking)</li>
+                        <li>Revision y activacion de canales</li>
+                        <li>Gestion, creacion y diseño de contenido</li>
+                        <li>Respuestas a mensajes y consultas</li>
+                        <li>Segmentacion de promociones segun el publico objetivo 
+                            de la pauta publicitaria
+                        </li>
+                        <li>Diagramamos un calendario que se ajuste a los objetivos de la empresa</li>
+                        <li>¡Empezamos a comunicar!</li>
+                    </ol>
+                </article>
             </div>
         </section>
+
+        <hr>
+
+        <div>
+            <p>
+                <strong>
+                    ¿Queres que nos contactemos con vos?
+                </strong>
+                <br>
+            Envianos tu consulta
+            </p>                
+        </div>
         <hr>
     </main>
     <footer>        
@@ -110,7 +124,7 @@
                 wwwapas
             </li>
             <li class="flexItem">
-                wwwapas_sm@mail.com
+                <a href="mailto:wwwapas_sm@mail.com">wwwapas_sm@mail.com</a>
             </li>            
         </ul>
         <hr>

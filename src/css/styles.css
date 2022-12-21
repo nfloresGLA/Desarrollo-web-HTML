@@ -29,11 +29,14 @@ h2 {
     flex-grow: 3; /*Crecimiento*/
     flex-shrink: 1; /*Decrecimiento*/
     flex-basis: 50%; /*Toma la mitad del ancho o de la altura depende del flex-direction*/
+    margin-left: 56px;
+    margin-top: 0px;
 }
 
 .flexItem {
     flex-grow: 1;
     flex-shrink: 2;
+    margin-top: 10px;
 }
 
 a {

@@ -84,10 +84,10 @@
         <hr>
 
         <section class="flexContainerRow">
-            <div class="flexItemPrincipal">
-                <img src="/src/assets/img-servicios.png" alt="Logo servicios" width="400px">
-            </div>
             <div class="flexItem">
+                <img src="/src/assets/img-servicios.png" alt="Logo servicios" width="500px">
+            </div>
+            <div class="flexItemPrincipal">
                 <h2>SERVICIOS</h2>
                 <article>
                     <ol>
@@ -107,15 +107,61 @@
 
         <hr>
 
-        <div>
-            <p>
-                <strong>
-                    ¿Queres que nos contactemos con vos?
-                </strong>
-                <br>
-            Envianos tu consulta
-            </p>                
-        </div>
+        <section>
+            <div class="flexContainerRow">
+                <div class="flexItem">
+                    <p>
+                        <strong>
+                            ¿Queres que nos contactemos con vos?
+                        </strong>
+                        <br>
+                    Envianos tu consulta
+                    </p>                
+                </div>
+                <div class="flexItem">
+                    <form action="codigo.php" method="post">
+                        <label for="nombre">Nombre <b>*</b><br>
+                            <input type="text" id="nombre" required placeholder="Escriba su nombre">
+                        </label>
+                        <br>
+                        <label for="mail">Email <b>*</b><br>
+                            <input type="mail" id="mail" required placeholder="example@mail.com">
+                        </label>
+                        <br>
+                        <label for="consulta">Mensaje <b>*</b><br>
+                            <textarea name="consulta" id="consulta" cols="40" rows="5">Envíanos tu consulta</textarea>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="flexContainerRow">
+                <p class="flexItem">Redes <br> wwwapas</p>
+                <div class="flexItem">
+                    <a href="htpps://www.instagram.com/educacionit" title="Instagram Educacion it" target="_blank">
+                        <img src="/src/assets/instagram-icon.png" alt="instagram" width="100px">
+                    </a>
+                </div>
+                <div class="flexItem">
+                    <a href="" title="" target="_blank">
+                        <img src="/src/assets/dribbble-icon.png" alt="" width="100px">
+                    </a>
+                </div>
+                <div class="flexItem">
+                    <a href="" title="" target="_blank">
+                        <img src="/src/assets/linkedin-icon.png" alt="" width="100px">
+                    </a>
+                </div>
+                <div class="flexItem">
+                    <a href="" title="" target="_blank">
+                        <img src="/src/assets/facebook-icon.png" alt="" width="100px">
+                    </a>
+                </div>
+            </div>
+        </section>
         <hr>
     </main>
     <footer>        

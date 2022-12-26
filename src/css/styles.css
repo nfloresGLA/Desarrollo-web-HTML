@@ -13,6 +13,14 @@ h1 strong {
     font-size: 117px;
 }
 
+.titlePrincipal {
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    margin-top: 100px;
+}
+
 h2 {
     font-weight: 400; 
     font-size: 27px;
@@ -44,8 +52,122 @@ a {
     color: black;
 }
 
+a:hover {
+    font-weight: 100;
+}
+
 ol {
     font-size: 2em;
     font-weight: 400;
     list-style-position: inside;
+}
+
+label {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+}
+
+input {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-width: 2px;
+    background-color: white;
+    border-color: black;
+    height: 25px;
+    width: 300px;
+}
+
+textarea {
+    resize: none;
+    width: 300px;
+    border-width: 2px;
+    background-color: white;
+    border-color: black;
+}
+
+button {
+    font-size: 12px;    
+    height: 30px;
+    width: 120px;
+    line-height: 30px;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 13px;
+    background-color: black;
+    color: #f2f2f2;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+    color: #f2f2f2;
+}
+
+.red-color {
+    color: rgb(235, 4, 4);
+    font-weight: 700;
+}
+
+.grey-color {
+    color: grey;
+    font-weight: 700;
+}
+
+.fs-1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.fs-2 {
+    font-size: 34px;
+}
+
+.fs-3 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.fs-4 {
+    font-size: 68px;
+    font-weight: 700;
+}
+
+.m-1 {
+    margin: 5px;
+}
+
+.m-2 {
+    margin: 10px;
+}
+
+.m-3 {
+    margin: 15px;
+}
+
+.mt-3 {
+    margin-top: 50px;
+}
+
+.mb-3 {
+    margin-bottom: 25px;
+}
+
+.mr-5 {
+    margin-right: 100px;
+}
+
+.p-3 {
+    padding: 15px;
+}
+
+.coiny {
+    font-family: 'Coiny';
+    font-weight: 100;
 }

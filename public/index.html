@@ -10,11 +10,10 @@
 </head>
 <body>
     <header>
-
         <nav>
-            <ul class="flexContainerRow">
+            <ul class="flexContainerRow fs-1">
                 <li class="flexItemPrincipal">
-                    <img src="/src/assets/logo.png" alt="wwwapas" width="150px">
+                    <img src="/src/assets/logo.png" alt="wwwapas" width="200px">
                 </li>       
                 <li class="flexItem">
                     <a href="/public/index.html">Inicio</a>
@@ -31,8 +30,8 @@
 
         <div class="flexContainerRow">
             <div class="flexItemPrincipal">
-                <h1>Somos <strong>wwwapas</strong></h1>
-                <h2>Social media managers | Creadoras de contenido</h2>
+                <h1 class="titlePrincipal">Somos <strong>wwwapas</strong></h1>
+                <strong class="yellow subtitle">Social media managers | Creadoras de contenido</strong>
                 <p>
                     Nos encargamos de construir, gestionar y administrar la comunidad
                     online de tu marca, empresa o negocio
@@ -51,33 +50,36 @@
     </header>
     <main>
         <section>
-            <div>
-                <h3>¡Hola! Somos SOFI & JULIA,</h3>
-                <p>                                 
-                    las social media managers, las creadoras de contenido, las
-                    copywriters, las generadoras de leads, las diseñadoras, las
-                    estrategas en marketing digital, las potenciadoras de ventas,
-                    el posicionamiento de tu marca
-                    <b>
-                        ¡Somos el complemento que
-                        necesitás para hacer crecer tu marca!
-                        ¡Somos wwwapas!
-                    </b>
-                </p>                
-            </div> 
+            <div class="flexContainerRow m-3">
 
-            <div>
-                <h3>GESTIONAMOS TUS REDES SOCIALES</h3>
-                <p>
-                    La transformación digital no es solo para grandes compañías,
-                    todas las empresas deben emprenderla cuanto antes y aquí
-                    es donde podemos asistirte. Armamos estrategias a medida
-                    para tu empresa, marca o producto
-                    <strong>
-                        ¡Aumentá tu presencia
-                        digital y generá nuevas ventas y contactos!
-                    </strong>                    
-                </p>               
+                <div class="flexItem mr-5">
+                    <strong class="yellow">¡Hola! Somos SOFI & JULIA,</strong>
+                    <p>                                 
+                        las social media managers, las creadoras de contenido, las
+                        copywriters, las generadoras de leads, las diseñadoras, las
+                        estrategas en marketing digital, las potenciadoras de ventas,
+                        el posicionamiento de tu marca
+                        <b>
+                            ¡Somos el complemento que
+                            necesitás para hacer crecer tu marca!
+                            ¡Somos wwwapas!
+                        </b>
+                    </p>                
+                </div> 
+    
+                <div class="flexItem">
+                    <strong class="yellow">GESTIONAMOS TUS REDES SOCIALES</strong>
+                    <p>
+                        La transformación digital no es solo para grandes compañías,
+                        todas las empresas deben emprenderla cuanto antes y aquí
+                        es donde podemos asistirte. Armamos estrategias a medida
+                        para tu empresa, marca o producto
+                        <strong>
+                            ¡Aumentá tu presencia
+                            digital y generá nuevas ventas y contactos!
+                        </strong>                    
+                    </p>               
+                </div>
             </div>
         </section>
 
@@ -90,7 +92,7 @@
             <div class="flexItemPrincipal">
                 <h2>SERVICIOS</h2>
                 <article>
-                    <ol>
+                    <ol class="fs-2">
                         <li>Analisis de perfil (Benchmarking)</li>
                         <li>Revision y activacion de canales</li>
                         <li>Gestion, creacion y diseño de contenido</li>
@@ -99,7 +101,7 @@
                             de la pauta publicitaria
                         </li>
                         <li>Diagramamos un calendario que se ajuste a los objetivos de la empresa</li>
-                        <li>¡Empezamos a comunicar!</li>
+                        <li class="yellow fs-3">¡Empezamos a comunicar!</li>
                     </ol>
                 </article>
             </div>
@@ -109,55 +111,60 @@
 
         <section>
             <div class="flexContainerRow">
-                <div class="flexItem">
-                    <p>
-                        <strong>
-                            ¿Queres que nos contactemos con vos?
-                        </strong>
+                <div class="flexItem m-1">
+                    <strong class="black fs-3">
+                        ¿Queres que nos
                         <br>
-                    Envianos tu consulta
-                    </p>                
+                        contactemos con vos?
+                    </strong>
+                    <br> <br>
+                    <strong class="yellow fs-1">
+                        Envianos tu consulta >>
+                    </strong>
                 </div>
                 <div class="flexItem">
                     <form action="codigo.php" method="post">
-                        <label for="nombre">Nombre <b>*</b><br>
+                        <label for="nombre">Nombre <b class="red-color">*</b><br>
                             <input type="text" id="nombre" required placeholder="Escriba su nombre">
                         </label>
                         <br>
-                        <label for="mail">Email <b>*</b><br>
+                        <label for="mail">Email <b class="red-color">*</b><br>
                             <input type="mail" id="mail" required placeholder="example@mail.com">
                         </label>
                         <br>
-                        <label for="consulta">Mensaje <b>*</b><br>
-                            <textarea name="consulta" id="consulta" cols="40" rows="5">Envíanos tu consulta</textarea>
+                        <label for="consulta">Mensaje <b class="red-color">*</b><br>
+                            <textarea name="consulta" id="consulta" rows="5" placeholder="Envíanos tu consulta"></textarea>
                         </label>
+                        <div>
+                            <button>¡Enviar consulta!</button>
+                            <button>Borrar</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </section>
 
-
         <section>
-            <div class="flexContainerRow">
+            <div class="flexContainerRow m-1 mt-3 mb-3">
                 <p class="flexItem">Redes <br> wwwapas</p>
                 <div class="flexItem">
                     <a href="htpps://www.instagram.com/educacionit" title="Instagram Educacion it" target="_blank">
-                        <img src="/src/assets/instagram-icon.png" alt="instagram" width="100px">
+                        <img src="/src/assets/instagram-icon.png" alt="instagram" width=75px">
                     </a>
                 </div>
                 <div class="flexItem">
                     <a href="" title="" target="_blank">
-                        <img src="/src/assets/dribbble-icon.png" alt="" width="100px">
+                        <img src="/src/assets/dribbble-icon.png" alt="" width="75px">
                     </a>
                 </div>
                 <div class="flexItem">
                     <a href="" title="" target="_blank">
-                        <img src="/src/assets/linkedin-icon.png" alt="" width="100px">
+                        <img src="/src/assets/linkedin-icon.png" alt="" width="75px">
                     </a>
                 </div>
                 <div class="flexItem">
                     <a href="" title="" target="_blank">
-                        <img src="/src/assets/facebook-icon.png" alt="" width="100px">
+                        <img src="/src/assets/facebook-icon.png" alt="" width="75px">
                     </a>
                 </div>
             </div>
@@ -165,11 +172,11 @@
         <hr>
     </main>
     <footer>        
-        <ul class="flexContainerRow">
-            <li class="flexItem">
+        <ul class="flexContainerRow yellow p-3 coiny">
+            <li class="flexItem fs-1">
                 wwwapas
             </li>
-            <li class="flexItem">
+            <li class="flexItem fs-1">
                 <a href="mailto:wwwapas_sm@mail.com">wwwapas_sm@mail.com</a>
             </li>            
         </ul>

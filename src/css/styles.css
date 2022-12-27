@@ -143,6 +143,10 @@ button {
     margin: 5px;
 }
 
+.ml-1 {
+    margin-left: 10px;
+}
+
 .m-2 {
     margin: 10px;
 }
@@ -170,4 +174,9 @@ button {
 .coiny {
     font-family: 'Coiny';
     font-weight: 100;
+}
+
+.servicios {
+    width: 600px;
+    font-size: 30px;
 }

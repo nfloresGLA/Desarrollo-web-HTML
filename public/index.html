@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/styles.css"> <!--Estilos de los elementos-->
+    <link rel="stylesheet" href="/src/css/generic.css"> <!--Estilos de las propiedades-->
 </head>
 <body>
-    <header>
-        <nav>
+    <header id="inicio">
+        <nav id="navbar">
             <ul class="flexContainerRow fs-1">
                 <li class="flexItemPrincipal">
                     <img src="/src/assets/logo.png" alt="wwwapas" width="200px">
                 </li>       
                 <li class="flexItem">
-                    <a href="/public/index.html">Inicio</a>
+                    <a href="#inicio">Inicio</a>
                 </li>
                 <li class="flexItem">
-                    <a href="">Servicios</a>
+                    <a href="#servicios">Servicios</a>
                 </li>
                 <li class="flexItem">
-                    <a href="">Contacto</a>
+                    <a href="#contacto">Contacto</a>
                 </li>
             </ul>
             <hr>
@@ -30,9 +31,11 @@
 
         <div class="flexContainerRow">
             <div class="flexItemPrincipal">
-                <h1 class="titlePrincipal">Somos <strong>wwwapas</strong></h1>
-                <strong class="yellow subtitle">Social media managers | Creadoras de contenido</strong>
-                <p>
+                <div>
+                    <h1 class="titlePrincipal">Somos <br> <strong>wwwapas</strong> </h1>
+                    <strong class="yellow subtitle">Social media managers | Creadoras de contenido</strong>
+                </div>
+                <p id="texto-principal">
                     Nos encargamos de construir, gestionar y administrar la comunidad
                     online de tu marca, empresa o negocio
                     <strong>
@@ -52,9 +55,9 @@
         <section>
             <div class="flexContainerRow m-3">
 
-                <div class="flexItem mr-5">
-                    <strong class="yellow">¡Hola! Somos SOFI & JULIA,</strong>
-                    <p>                                 
+                <div class="flexItem mr-5 text-main">
+                    <strong class="yellow title-main">¡Hola! Somos SOFI & JULIA,</strong>
+                    <p class="p-main">                                 
                         las social media managers, las creadoras de contenido, las
                         copywriters, las generadoras de leads, las diseñadoras, las
                         estrategas en marketing digital, las potenciadoras de ventas,
@@ -67,9 +70,9 @@
                     </p>                
                 </div> 
     
-                <div class="flexItem">
-                    <strong class="yellow">GESTIONAMOS TUS REDES SOCIALES</strong>
-                    <p>
+                <div class="flexItem text-main">
+                    <strong class="yellow title-main">GESTIONAMOS TUS REDES SOCIALES</strong>
+                    <p class="p-main">
                         La transformación digital no es solo para grandes compañías,
                         todas las empresas deben emprenderla cuanto antes y aquí
                         es donde podemos asistirte. Armamos estrategias a medida
@@ -86,22 +89,22 @@
         <hr>
 
         <section class="flexContainerRow">
-            <div class="flexItem ml-1">
-                <img src="/src/assets/img-servicios.png" alt="Logo servicios" width="500px">
+            <div id="servicios" class="flexItem ml-1">
+                <img class="servicios-img" src="/src/assets/img-servicios.png" alt="Logo servicios">
             </div>
             <div class="flexItemPrincipal">
-                <h2>SERVICIOS</h2>
+                <h2 id="servicios-title">SERVICIOS</h2>
                 <article>
-                    <ol class="fs-2 servicios">
-                        <li>Analisis de perfil (Benchmarking)</li>
-                        <li>Revision y activacion de canales</li>
-                        <li>Gestion, creacion y diseño de contenido</li>
-                        <li>Respuestas a mensajes y consultas</li>
-                        <li>Segmentacion de promociones segun el publico objetivo 
+                    <ol class="fs-2 servicios-list">
+                        <li class="servicios-item">Analisis de perfil (Benchmarking)</li>
+                        <li class="servicios-item">Revision y activacion de canales</li>
+                        <li class="servicios-item">Gestion, creacion y diseño de contenido</li>
+                        <li class="servicios-item">Respuestas a mensajes y consultas</li>
+                        <li class="servicios-item">Segmentacion de promociones segun el publico objetivo 
                             de la pauta publicitaria
                         </li>
-                        <li>Diagramamos un calendario que se ajuste a los objetivos de la empresa</li>
-                        <li class="yellow fs-3">¡Empezamos a comunicar!</li>
+                        <li class="servicios-item">Diagramamos un calendario que se ajuste a los objetivos de la empresa</li>
+                        <li class="yellow fs-2 servicios-item">¡Empezamos a comunicar!</li>
                     </ol>
                 </article>
             </div>
@@ -110,31 +113,34 @@
         <hr>
 
         <section>
-            <div class="flexContainerRow">
-                <div class="flexItem m-1">
-                    <strong class="black fs-3">
-                        ¿Queres que nos
-                        contactemos con vos?
-                    </strong>
-                    <br> <br>
-                    <strong class="yellow fs-1">
+            <div id="contacto" class="flexContainerRow contacto">
+                <div class="flexItem">
+                    <div id="contacto-principal">
+                        <strong id="contacto-title" class="black">
+                            ¿Queres que nos
+                            contactemos con vos?
+                        </strong>
+                    </div>
+                    
+                    <strong id="contacto-subtitle" class="yellow">
                         Envianos tu consulta >>
                     </strong>
                 </div>
-                <div class="flexItem">
-                    <form action="codigo.php" method="post">
+                
+                <div class="form-frame">
+                    <form class="center" action="codigo.php" method="post">
                         <label for="nombre">Nombre <b class="red-color">*</b><br>
-                            <input type="text" id="nombre" required placeholder="Escriba su nombre">
+                            <input type="text" id="nombre" autocomplete="off" required placeholder="Escriba su nombre">
                         </label>
                         <br>
                         <label for="mail">Email <b class="red-color">*</b><br>
-                            <input type="mail" id="mail" required placeholder="example@mail.com">
+                            <input type="mail" id="mail" autocomplete="off" required placeholder="example@mail.com">
                         </label>
                         <br>
                         <label for="consulta">Mensaje <b class="red-color">*</b><br>
                             <textarea name="consulta" id="consulta" rows="5" placeholder="Envíanos tu consulta"></textarea>
                         </label>
-                        <div>
+                        <div class="flexContainerRow">
                             <button type="submit">¡Enviar consulta!</button>
                             <button type="reset">Borrar</button>
                         </div>
@@ -144,8 +150,8 @@
         </section>
 
         <section>
-            <div class="flexContainerRow m-1 mt-3 mb-3">
-                <p class="flexItem">Redes <br> wwwapas</p>
+            <div id="redes" class="flexContainerRow m-1 mt-3 mb-3">
+                <p id="redes-title" class="flexItem">Redes <br> wwwapas</p>
                 <div class="flexItem">
                     <a href="htpps://www.instagram.com/educacionit" title="Instagram Educacion it" target="_blank">
                         <img src="/src/assets/instagram-icon.png" alt="instagram" width=75px">
@@ -168,18 +174,16 @@
                 </div>
             </div>
         </section>
-        <hr>
     </main>
     <footer>        
-        <ul class="flexContainerRow yellow p-3 coiny">
-            <li class="flexItem fs-1">
+        <ul id="footer-principal" class="yellow coiny">
+            <li class="footer-list fs-1">
                 wwwapas
             </li>
-            <li class="flexItem fs-1">
+            <li class="footer-list fs-1">
                 <a href="mailto:wwwapas_sm@mail.com">wwwapas_sm@mail.com</a>
             </li>            
-        </ul>
-        <hr>
+        </ul>        
     </footer>
 </body>
 </html>

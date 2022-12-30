@@ -42,7 +42,8 @@ Se agregan las imagenes (assets) y se implementan al proyecto y se re-estructura
 Se restructuran las secciones
 
 /* Modulo-04 */
-Se implementan las clases a los elementos para darles estilos personalizados, ademas se agregan estilos genericos
+Se implementan las clases a los elementos para darles estilos personalizados, 
+ademas se agregan estilos genericos
 
 /* Modulo-05 */
 Se hacen cambios ligeros en los elementos

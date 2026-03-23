@@ -1,189 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>wwwapas | Social Media</title>
+    <meta name="description" content="Servicios de social media management, contenido y estrategia digital para potenciar tu marca.">
 
-    <link rel="stylesheet" href="/src/css/styles.css"> <!--Estilos de los elementos-->
-    <link rel="stylesheet" href="/src/css/generic.css"> <!--Estilos de las propiedades-->
+    <link rel="stylesheet" href="/src/css/generic.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 <body>
-    <header id="inicio">
-        <nav id="navbar">
-            <ul class="flexContainerRow fs-1">
-                <li class="flexItemPrincipal">
-                    <img src="/src/assets/logo.png" alt="wwwapas" width="200px">
-                </li>       
-                <li class="flexItem">
-                    <a href="#inicio">Inicio</a>
-                </li>
-                <li class="flexItem">
-                    <a href="#servicios">Servicios</a>
-                </li>
-                <li class="flexItem">
-                    <a href="#contacto">Contacto</a>
-                </li>
+    <header class="site-header" id="inicio">
+        <nav class="top-nav container" aria-label="Navegacion principal">
+            <a class="brand" href="#inicio" aria-label="Inicio wwwapas">
+                <img src="/src/assets/logo.png" alt="Logo de wwwapas" width="200">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <hr>
         </nav>
 
-        <div class="flexContainerRow">
-            <div class="flexItemPrincipal">
-                <div>
-                    <h1 class="titlePrincipal">Somos <br> <strong>wwwapas</strong> </h1>
-                    <strong class="yellow subtitle">Social media managers | Creadoras de contenido</strong>
-                </div>
-                <p id="texto-principal">
-                    Nos encargamos de construir, gestionar y administrar la comunidad
-                    online de tu marca, empresa o negocio
-                    <strong>
-                        ¡Creamos relaciones estables y
-                        duraderas con tus clientes!
-                    </strong>
+        <section class="hero container" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title">
+                    Somos
+                    <span>wwwapas</span>
+                </h1>
+                <p class="hero-tagline">Social media managers | Creadoras de contenido</p>
+                <p class="hero-description">
+                    Nos encargamos de construir, gestionar y administrar la comunidad online de tu marca, empresa o negocio.
+                    <strong>Creamos relaciones estables y duraderas con tus clientes.</strong>
                 </p>
             </div>
 
-            <div class="flexItem">
-                <img src="/src/assets/foto.png" alt="portada" width="600px" height="auto">
-            </div>                
-        </div>
-        <hr>
+            <div class="hero-image-wrap">
+                <img class="hero-image" src="/src/assets/foto.png" alt="Equipo de trabajo de wwwapas">
+            </div>
+        </section>
     </header>
+
     <main>
-        <section>
-            <div class="flexContainerRow m-3">
+        <section class="intro section container" aria-label="Presentacion de la agencia">
+            <article class="info-card">
+                <h2 class="card-title">Hola, somos SOFI y JULIA</h2>
+                <p>
+                    Somos social media managers, creadoras de contenido, copywriters, generadoras de leads,
+                    disenadoras y estrategas de marketing digital.
+                    <strong>Somos el complemento que necesitas para hacer crecer tu marca.</strong>
+                </p>
+            </article>
 
-                <div class="flexItem mr-5 text-main">
-                    <strong class="yellow title-main">¡Hola! Somos SOFI & JULIA,</strong>
-                    <p class="p-main">                                 
-                        las social media managers, las creadoras de contenido, las
-                        copywriters, las generadoras de leads, las diseñadoras, las
-                        estrategas en marketing digital, las potenciadoras de ventas,
-                        el posicionamiento de tu marca
-                        <b>
-                            ¡Somos el complemento que
-                            necesitás para hacer crecer tu marca!
-                            ¡Somos wwwapas!
-                        </b>
-                    </p>                
-                </div> 
-    
-                <div class="flexItem text-main">
-                    <strong class="yellow title-main">GESTIONAMOS TUS REDES SOCIALES</strong>
-                    <p class="p-main">
-                        La transformación digital no es solo para grandes compañías,
-                        todas las empresas deben emprenderla cuanto antes y aquí
-                        es donde podemos asistirte. Armamos estrategias a medida
-                        para tu empresa, marca o producto
-                        <strong>
-                            ¡Aumentá tu presencia
-                            digital y generá nuevas ventas y contactos!
-                        </strong>                    
-                    </p>               
-                </div>
+            <article class="info-card">
+                <h2 class="card-title">Gestionamos tus redes sociales</h2>
+                <p>
+                    La transformacion digital no es solo para grandes companias. Creamos estrategias a medida
+                    para cada empresa, marca o producto.
+                    <strong>Aumenta tu presencia digital y genera nuevas ventas y contactos.</strong>
+                </p>
+            </article>
+        </section>
+
+        <section class="services section container" id="servicios" aria-labelledby="services-title">
+            <div class="services-image-wrap">
+                <img class="services-image" src="/src/assets/img-servicios.png" alt="Ilustracion de servicios">
+            </div>
+
+            <div class="services-content">
+                <h2 id="services-title">Servicios</h2>
+                <ol class="services-list">
+                    <li>Analisis de perfil y benchmarking.</li>
+                    <li>Revision y activacion de canales.</li>
+                    <li>Gestion, creacion y diseno de contenido.</li>
+                    <li>Respuestas a mensajes y consultas.</li>
+                    <li>Segmentacion de promociones segun publico objetivo.</li>
+                    <li>Calendario de contenidos alineado a objetivos de negocio.</li>
+                    <li class="services-cta">Empezamos a comunicar.</li>
+                </ol>
             </div>
         </section>
 
-        <hr>
-
-        <section class="flexContainerRow">
-            <div id="servicios" class="flexItem ml-1">
-                <img class="servicios-img" src="/src/assets/img-servicios.png" alt="Logo servicios">
+        <section class="contact section container" id="contacto" aria-labelledby="contact-title">
+            <div class="contact-content">
+                <h2 id="contact-title">Quieres que nos contactemos con vos?</h2>
+                <p class="contact-subtitle">Envianos tu consulta.</p>
             </div>
-            <div class="flexItemPrincipal">
-                <h2 id="servicios-title">SERVICIOS</h2>
-                <article>
-                    <ol class="fs-2 servicios-list">
-                        <li class="servicios-item">Analisis de perfil (Benchmarking)</li>
-                        <li class="servicios-item">Revision y activacion de canales</li>
-                        <li class="servicios-item">Gestion, creacion y diseño de contenido</li>
-                        <li class="servicios-item">Respuestas a mensajes y consultas</li>
-                        <li class="servicios-item">Segmentacion de promociones segun el publico objetivo 
-                            de la pauta publicitaria
-                        </li>
-                        <li class="servicios-item">Diagramamos un calendario que se ajuste a los objetivos de la empresa</li>
-                        <li class="yellow fs-2 servicios-item">¡Empezamos a comunicar!</li>
-                    </ol>
-                </article>
-            </div>
-        </section>
 
-        <hr>
-
-        <section>
-            <div id="contacto" class="flexContainerRow contacto">
-                <div class="flexItem">
-                    <div id="contacto-principal">
-                        <strong id="contacto-title" class="black">
-                            ¿Queres que nos
-                            contactemos con vos?
-                        </strong>
+            <div class="form-frame">
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-field">
+                        <label for="nombre">Nombre <span class="required">*</span></label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" required placeholder="Escribi tu nombre">
                     </div>
-                    
-                    <strong id="contacto-subtitle" class="yellow">
-                        Envianos tu consulta >>
-                    </strong>
-                </div>
-                
-                <div class="form-frame">
-                    <form class="center" action="codigo.php" method="post">
-                        <label for="nombre">Nombre <b class="red-color">*</b><br>
-                            <input type="text" id="nombre" autocomplete="off" required placeholder="Escriba su nombre">
-                        </label>
-                        <br>
-                        <label for="mail">Email <b class="red-color">*</b><br>
-                            <input type="mail" id="mail" autocomplete="off" required placeholder="example@mail.com">
-                        </label>
-                        <br>
-                        <label for="consulta">Mensaje <b class="red-color">*</b><br>
-                            <textarea name="consulta" id="consulta" rows="5" placeholder="Envíanos tu consulta"></textarea>
-                        </label>
-                        <div class="flexContainerRow">
-                            <button type="submit">¡Enviar consulta!</button>
-                            <button type="reset">Borrar</button>
-                        </div>
-                    </form>
-                </div>
+
+                    <div class="form-field">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" autocomplete="email" required placeholder="ejemplo@mail.com">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="consulta">Mensaje <span class="required">*</span></label>
+                        <textarea id="consulta" name="consulta" rows="5" required placeholder="Contanos en que te ayudamos"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit">Enviar consulta</button>
+                        <button class="button-secondary" type="reset">Borrar</button>
+                    </div>
+                </form>
             </div>
         </section>
 
-        <section>
-            <div id="redes" class="flexContainerRow m-1 mt-3 mb-3">
-                <p id="redes-title" class="flexItem">Redes <br> wwwapas</p>
-                <div class="flexItem">
-                    <a href="htpps://www.instagram.com/educacionit" title="Instagram Educacion it" target="_blank">
-                        <img src="/src/assets/instagram-icon.png" alt="instagram" width=75px">
+        <section class="social section container" aria-label="Redes sociales">
+            <h2 class="social-title">Redes de wwwapas</h2>
+            <ul class="social-list">
+                <li>
+                    <a href="https://www.instagram.com/educacionit" target="_blank" rel="noreferrer" aria-label="Instagram">
+                        <img src="/src/assets/instagram-icon.png" alt="Icono de Instagram" width="72" height="72">
                     </a>
-                </div>
-                <div class="flexItem">
-                    <a href="" title="" target="_blank">
-                        <img src="/src/assets/dribbble-icon.png" alt="" width="75px">
+                </li>
+                <li>
+                    <a href="#" aria-label="Dribbble">
+                        <img src="/src/assets/dribbble-icon.png" alt="Icono de Dribbble" width="72" height="72">
                     </a>
-                </div>
-                <div class="flexItem">
-                    <a href="" title="" target="_blank">
-                        <img src="/src/assets/linkedin-icon.png" alt="" width="75px">
+                </li>
+                <li>
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="/src/assets/linkedin-icon.png" alt="Icono de LinkedIn" width="72" height="72">
                     </a>
-                </div>
-                <div class="flexItem">
-                    <a href="" title="" target="_blank">
-                        <img src="/src/assets/facebook-icon.png" alt="" width="75px">
+                </li>
+                <li>
+                    <a href="#" aria-label="Facebook">
+                        <img src="/src/assets/facebook-icon.png" alt="Icono de Facebook" width="72" height="72">
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
     </main>
-    <footer>        
-        <ul id="footer-principal" class="yellow coiny">
-            <li class="footer-list fs-1">
-                wwwapas
-            </li>
-            <li class="footer-list fs-1">
-                <a href="mailto:wwwapas_sm@mail.com">wwwapas_sm@mail.com</a>
-            </li>            
-        </ul>        
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p class="footer-brand">wwwapas</p>
+            <a class="footer-mail" href="mailto:wwwapas_sm@mail.com">wwwapas_sm@mail.com</a>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,53 +1,53 @@
-# Desarrollo web con HTML - EducacionIT.
+# Desarrollo web con HTML y CSS
 
-### Proyecto integrador hecho con HTML y CSS.
-### Se debe desarrollar un proyecto integrador con lo aprendido clase a clase.
+Proyecto integrador orientado a practica de maquetado y organizacion de estilos.
 
-<br>
+## Objetivo
+Construir una landing page para una agencia de marketing digital con:
 
-## Prefacio
-Nuestro cliente es una empresa de `Marketing 
-digital` que desea mostrar sus servicios y 
-productos estableciendo una presencia en la 
-web. Para ello, vamos a elaborar una interfaz 
-siguiendo un diseño establecido previamente 
-para lograr que `nuestra página muestre los 
-servicios y ventajas de trabajar con esta empresa 
-de Marketing digital` y no otra. 
-Además, debe tener un formulario de contacto 
-que permita establecer una fácil comunicación 
-con un cliente potencial.
+- Presentacion del servicio
+- Seccion de servicios
+- Formulario de contacto
+- Enlaces a redes sociales
 
-### FIGMA protocolo: 
+## Estructura actual del proyecto
+
+```text
+public/
+	index.html          -> estructura semantica del sitio
+
+src/
+	assets/             -> imagenes e iconos
+	css/
+		generic.css       -> variables, reset, tipografias, utilidades base
+		styles.css        -> layout, componentes, responsive
+
+modules/
+	*.pdf               -> material de estudio por etapas
+```
+
+## Criterios del refactor aplicado
+
+- HTML con semantica clara: header, nav, main, section, article y footer.
+- Clases descriptivas y consistentes.
+- CSS separado por responsabilidad:
+	- generic.css para base global
+	- styles.css para componentes y secciones
+- Mejora de accesibilidad:
+	- labels correctos en formulario
+	- atributos aria en navegacion y redes
+	- focus visible en controles
+- Correccion de errores de marcado y enlaces.
+- Diseno responsive para desktop, tablet y mobile.
+
+## Como estudiar este proyecto
+
+1. Empeza por public/index.html para entender la estructura general.
+2. Segui con src/css/generic.css para ver tokens y reglas base.
+3. Termina con src/css/styles.css para comprender como se construyen los componentes.
+4. Proba cambios pequenos de colores, espaciados y tipografia para practicar.
+
+## Referencia de diseno original
+
+Figma:
 https://www.figma.com/file/6BvM0dWolsIQl1ZEtT7YUl/Proyecto-HTML?node-id=0%3A1
-
-## Carpetas:
-~~~ js
-public: HTML
-src: archivos CSS y assets (imagenes)
-modules: archivos PDF de cada modulo
-~~~
-## Branches - Resumen de contenido
-<br>
-El proyecto cuenta con 5 etapas de desarrollo (uno por cada modulo) y una refactorizacion final.
-
-~~~ js
-/* Modulo-01 */
-Estructura inicial del proyecto (presentacion de todos los elementos y estilos basicos)
-
-/* Modulo-02 */
-Se agregan las imagenes (assets) y se implementan al proyecto y se re-estructuran los estilos
-
-/* Modulo-03 */
-Se restructuran las secciones
-
-/* Modulo-04 */
-Se implementan las clases a los elementos para darles estilos personalizados, 
-ademas se agregan estilos genericos
-
-/* Modulo-05 */
-Se hacen cambios ligeros en los elementos
-
-/* Modulo-final */
-refactorizacion total, se agrega/quita/modifica las clases de las estructuras, 
-se mejoran los estilos de la pagina y se agrega un css con los formatos genericos
